@@ -1,3 +1,15 @@
+document.querySelectorAll('.clickable').forEach( scrollFromElement => {
+    scrollFromElement.addEventListener('click', event => {scrollToFunction(event)});
+  });
+function scrollToFunction(event) {
+    var scrollToElement = event.target;
+    console.log(scrollToElement.id.replace("oben", "unten"));
+    scrollToElement = document.getElementById(scrollToElement.id.replace("oben", "unten"));
+    console.log(scrollToElement);
+    scrollToElement.scrollIntoView({ behavior: 'smooth'});
+}
+
+/*
 const obenEinsElement = document.getElementById("1-oben");
 obenEinsElement.addEventListener('click', scrollFunction);
 const obenZweiElement = document.getElementById("2-oben");
@@ -10,12 +22,14 @@ const obenFünfElement = document.getElementById("5-oben");
 obenFünfElement.addEventListener('click', scrollFunction);
 
 function scrollFunction(event) {
+    console.log(event);
     var scrollToElement = event.target;
     console.log(scrollToElement.id.replace("oben", "unten"));
     scrollToElement = document.getElementById(scrollToElement.id.replace("oben", "unten"));
     console.log(scrollToElement);
     scrollToElement.scrollIntoView({ behavior: 'smooth'});
 }
+*/
 
 /*
 const obenEinsElement = document.getElementById("1-oben");
