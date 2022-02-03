@@ -22,12 +22,57 @@ p {
 .a-normal {
     font-size: small;
 }
-div {
-    padding: 10px;
+.container-small {
+    position: relative;
+    width: 100%;
+    display: flex;
 }
 
-img {
-    width: 75%;
-    height: 75%;
-    border: 10px;
+.container {
+    position: relative;
+    width: 100%;
+    display: flex;
+    gap: 5%; 
+    flex-direction: row; /* unnötig, weil Default, aber damit ich es weiß.  */ 
+    justify-content: flex-start; /* ebenso - an der Hauptachse (in meinem Fall horizontal, weil row ausgewählt*/
+    align-items: flex-start; /* hier jetzt, wie an der vertikalen Achse */ 
+}
+
+@media (max-width: 500px) {
+    .container {
+        display: flex;
+        gap: 5%; 
+        /* On small screens, we are no longer using row direction but column */
+        flex-direction: column;
+    }
+  }
+
+.item {
+    height: auto;
+    flex-direction: row; 
+}
+
+.item-skizze {
+    flex-direction: column;
+    height: auto;
+}
+
+div {
+    margin: 5px; 
+}
+
+/*Wenn die Breite des Screens kleiner als 600px, soll mein Bild größer ausgegeben werden */
+@media (max-width: 600px) {
+    img {
+        width: 100%; /* 100% des Containers in dem es sich befindet*/
+        height: auto; 
+        border: 0px;
+    }
+}
+@media (min-width: 600px) {
+    img {
+        width: 75%;
+        height: auto;
+        border: 10px;
+    }
 }
