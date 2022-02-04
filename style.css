@@ -49,6 +49,15 @@ h2 {
         /* On small screens, we are no longer using row direction but column */
         flex-direction: column;
     }
+    #Kierkegaard0-oben {
+        height: 60vh;
+        width: auto;
+    }
+    .container-header {
+        text-align: center;
+        padding-bottom: 25vh;
+        padding-top: 15vh;
+    }
   }
 
 .item {
