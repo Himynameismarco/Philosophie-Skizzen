@@ -1,14 +1,13 @@
 body {
     padding: 2.5% 10% 10% 5%;
     color: #3f3f3d; 
+    font-family: 'Garamond';
 }
 
 h1 {
-    font-family: 'Garamond';
     font-size: large;
 }
 h2 {
-    font-family: 'Garamond';
     font-size: medium;
     margin-bottom: 5px;
 }
@@ -16,9 +15,6 @@ h2 {
     color: #d10b0d;
     text-decoration: underline;
     cursor: pointer;
-}
-p {
-    font-family: 'Garamond';
 }
 .a-normal {
     font-size: small;
