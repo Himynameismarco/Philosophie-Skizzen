@@ -25,7 +25,13 @@ h2 {
     width: 100%;
     display: flex;
 }
-
+#Kierkegaard {
+    height: 80vh;
+}
+.container-header {
+    text-align: center;
+    padding-bottom: 10vh;
+}
 .container {
     position: relative;
     width: 100%;
