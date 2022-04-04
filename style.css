@@ -17,9 +17,18 @@ h2 {
     cursor: pointer;
 }
 .a-normal {
-    font-size: small;
     color: #d10b0d;
 }
+
+.a-small {
+    font-size: x-small;
+    color:#d10b0d;
+}
+
+.p-small {
+    font-size: x-small;
+}
+
 .container-small {
     position: relative;
     width: 100%;
@@ -63,6 +72,12 @@ h2 {
 .item {
     height: auto;
     flex-direction: row; 
+}
+
+.item-center {
+    height: auto;
+    flex-direction: row;
+    align-items: center;
 }
 
 .item-skizze {

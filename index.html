@@ -4,97 +4,144 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <?php
+
+function redirectTohttps() {
+
+if($_SERVER[‘HTTPS’]!=”on”) {
+
+$redirect= “https://”.$_SERVER[‘HTTP_HOST’].$_SERVER[‘REQUEST_URI’];
+
+header(“Location:$redirect”); } }
+
+?>
     <link rel="stylesheet" href="style.css">
     <title>»Entweder – Oder. Ein Lebensfragment, herausgegeben von Victor Eremita« - Søren Kierkegaard</title>
 </head>
 <body>
     <div class="container-header">
-        <img class="clickable" id="Kierkegaard0-oben" src="/Bilder/Søren_Kierkegaard_(1813-1855)_-_(cropped).jpg" alt="Ein Schreibtisch">
+        <img class="clickable" id="Kierkegaard0-oben" src="/Bilder/Header_Soeren.jpg" alt="Ein Schreibtisch">
     </div>
     <div class="container-small">
         <nav id="Übersicht">
             <h2 id="Kierkegaard0-unten">ÜBERSICHT</h2>
             <ul>
-                <li><h2 class="clickable" id="1-oben">Sitzung 1 - Vorwort des Herausgebers</h2></li>
-                <li><h2 class="clickable" id="2-oben">Sitzung 2</h2></li>
-                <li><h2 class="clickable" id="3-oben">Sitzung 3</h2></li>
-                <li><h2 class="clickable" id="4-oben">Sitzung 4</h2></li>
-                <li><h2 class="clickable" id="5-oben">Sitzung 5</h2></li>
+                <li><h2 class="clickable" id="1-oben">Sitzung 1 - Vorwort & Diapsalmata</h2></li>
+                <li><h2 class="clickable" id="2-oben">Sitzung 2 - Nichtssagende Headline</h2></li>
+                <li><h2 class="clickable" id="3-oben">Sitzung 3 - Don Juan</h2></li>
+                <li><h2 class="clickable" id="4-oben">Sitzung 4 - Schattenrisse</h2></li>
+                <li><h2 class="clickable" id="5-oben">Sitzung 5 - Wer ist der Glücklichste?</h2></li>
             </ul>
         </nav>
     </div>
     <div class="container">
         <div class="item">
-            <h1>»Entweder – Oder. Ein Lebensfragment, herausgegeben von Victor Eremita« von Søren Kierkegaard</h1>
-            <p>Ziel des Lektürekurses ist die gemeinsame Lektüre und Diskussion von Sören Kierkegaards “Entweder - Oder. Ein Lebensfragment, herausgegeben von Victor Eremita.” (1843). In diesem Buch stellt Kierkegaard zwei Existenzmöglichkeiten gegenüber: die ästhetische und die ethische, A und B, den Verführer und den Ehemann, Don Juan und den Gerichtsrat. Da es ein recht umfangreiches Buch ist (933 Seiten in der dtv-Ausgabe), wird dieser Lektürekurs wohl einer der leseintensiveren werden. Wir werden uns jede Woche etwa 60 Seiten vornehmen. Ich denke aber, dass sich der Aufwand für jede:n, die:der sich für Sprache und Philosophie begeistern kann, lohnt. Diese Behauptung stützt, dass der Däne sowohl in der Philosophie als auch in der Dichtung bei einigen großen Namen Einfluss genommen hat: von Martin Heidegger über Karl Jasper und Friedrich Nietzsche bis Rainer Maria Rilke und Franz Kafka - allesamt wurden von Kierkegaard beeinflusst. Obwohl ich also denke, dass es sich lohnen wird, werde ich für jede Sitzung in der vorherigen 10 - 25 Seiten nennen, auf die wir uns beim gemeinsamen Lesen (falls nicht anders gewünscht) versuchen zu fokussieren, sodass auch wer nicht so viel Zeit aufbringen will (d.h.: evtl. nur diese Seiten lesen kann), trotzdem mitdiskutieren kann. </p>
-            <p>Die erste und die letzte Sitzung ist dabei in Präsenz geplant. Alle anderen finden online statt. Wer allerdings dazu keine Möglichkeit hat, kann sich vorab bei mir melden, dann finden wir eine Lösung. Für die erste Sitzung solltet ihr bereits das Vorwort des Herausgebers und den ersten Abschnitt aus As Papieren (die Diapsalmata) gelesen haben. Das sind Seiten 1 - 55 in der dtv-Ausgabe, die ich zum Lesen verwenden werde und auch aufgrund des Kommentars empfehle. Das Buch ist aber z.B. auch auf Zeno.org online verfügbar. In den Sitzungen werden wir dann einige Ausschnitte aus dem jeweils zu lesenden Seiten gemeinsam noch einmal lesen, um sie dann zu diskutieren. Wir fokussieren uns in der Dikussion auf Viktor Eremitas Vorwort (S. 11 - 25) und die ersten beiden Seiten der Diapsalmata, weil sie die ersten Schachteln des literarisch vielschichtig gestalteten Werks öffnen.</p>   
-            <p>Natürlich sind Student:innen aller Fächer und Semester herzlich willkommen! Alle Fragen gerne per Mail an kontakt@marcozander.com. </p>
+            <h1>»Entweder – Oder. Ein Lebensfragment, herausgegeben von Victor Eremita« (1834)</h1>
+            <p><b>Was wir in dem Lektürekurs machen</b></p>
+            <p>Wir lesen Kierkegaard. Einzeln, jede:r für sich. Für alles andere fehlt uns nicht nur die Zeit, es ist auch mehr im Sinne Kierkegaards. Und dann? Dann besprechen wir es. Gemeinsam. Unsere Ausrede vor Kierkegaard? Wir bekommen kein Zertifikat, keine ECTS-Punkte, es gibt keine Expertin, keinen Professor und wir erhalten nichts, das uns Sicherheit gibt, etwas gelernt zu haben.</p> 
+            <p>Und dabei lesen wir das ganze Buch. Das hat zur Folge, dass es manchmal viele Seiten sein werden, die wir lesen (z.B. mal 68). Dazu kommt, dass die (zumindet für mich) manchmal auch noch anspruchsvoll sind. ... Und ich weiß, dass das für einen Kurs, der keine ECTS-Punkt bringt, ein wenig viel Aufwand ist. Trotzdem wirst du, liebe:r Leser:in, wohl schon nach dem Lesen des <i>Vorwort des Herausgebers</i> verstehen, warum es kaum im Sinne der Texte sein kann, entweder A oder B zu lesen. Ich habe gehört, dass es die Tagebücher des Verführers einzeln zu kaufen gibt - für sich... und ich weiß nicht, was diesen <i>Herausgeber</i> dabei geritten hat. ... Naja. ... Ich traue mich das auf jeden Fall nicht. Wir lesen deswegen »Entweder – Oder« als Ganzes. Vielleicht wird es hin und wieder ein wenig mehr Aufwand, aber es wird (imho) auch verdammt schön.</p>
+            <p><b>Wie wir dabei vorgehen</b></p>
+            <p>Jede Woche nenne ich einen Abschnitt (~ 60 Seiten), den wir versuchen, bis zur kommenden Sitzung zu lesen. Zudem gebe ich in dem Abschnitt immer einen Fokus-Teil (~ 15 Seiten) an, auf den wir uns in der Sitzung konzentrieren werden. Dann kann jede:r die Teilmengen des (gesamten) Abschnittes mitbringen, neben die sie:er im Buch wahlweise ein aufgeregtes Ausrufezeichen, ein verliebtes Herzchen oder ein esotorisch anmutendes Symbol ihrer:seiner Wahl angebracht hat; einfacher ausgedrückt: du darfst und sollst deine Lieblingsstellen mitbringen. Ich werde das auf jeden Fall machen. Die Lieblingsstellen lesen wir dann noch einmal gemeinsam und besprechen sie in der Runde.</p>
+
+            <p><b>Was es mit dieser Webseite auf sich hat</b></p>
+            <p>Auf der Webseite versuche ich jede Woche eine einfache Skizze sowie ein paar Zeilen zum jeweiligen Abschnitt hochzuladen. Vielleicht dient es der einen oder dem anderen als Erinnerung, vielleicht als eine andere (mehr oder weniger verwirrende) Perspektive auf Kierkegaard, vielleicht nur zur Belustigung - in jedem Fall, darf man hier vorbeisehen. </p>   
+            <p>Also: Ich freue mich sehr Kierkegaard mit dir lesen zu dürfen. Fragen sind immer gern gesehen; selbst, wenn ich sie wahrscheinlich nicht befriedigend beantworten können werde. Am besten per Mail an <a href="mailto:kontakt@marcozander.com">kontakt@marcozander.com</a> oder eben in den Sitzungen.</p>
+            <p class="p-small">Ja, die meisten Skizzen sind noch Platzhalter.</p>
         </div>
     </div>
     <hr class="solid">
     <div class="container">
         <div class="item">
-            <h2 id="1-unten">Sitzung 1 - Vorwort des Herausgebers</h2>
-            [<a class="a-normal" href="#Übersicht">zurück zur Übersicht</a>]
+            <h2 id="1-unten">Vorwort & Diapsalmata</h2>
+            <p><b>Sitzung I</b> <br>
+            Abschnitt: S. 11 - 55 <br>
+            Fokus: S. 11 - 25<br></p>
+            <p><a class="a-normal" href="#Übersicht">Zurück zur Übersicht</a></p>
         </div>
         <div class="item-skizze">
-            <img src="/Bilder/Schreibtisch_transpartent.png" alt="Ein Schreibtisch">
+            <img src="/Bilder/Sketch_1.png" alt="A und B">
         </div>
         <div class="item">
-            <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+            <p><b>Erster Teil I: Diapsalmata - die zugeflogenen Beobachtungen</b></p>
+            <p>Dann beginnen wir also mit der Lektüre einiger Papiere, die deswegen unter dem Titel »Entweder – Oder« zusammgefasst wurden, weil Viktor Eremita meint, dass sich ihnen eine neue Seite abgewinnen lässt, wenn man sie nicht als Entweder-Oder sondern als <i>einem</i> Menschen zugehörig betrachtet. </p>
+            <p>Alle Wahrscheinlichkeit (und ihre Verbündete die Historie) versichern uns jedoch, dass sie, die nachgelassenen Papiere, zu zwei verschiedenen Menschen gehören: A und B; dem Ästhetiker und dem Ethiker; Don Juan und dem Gerichtsrat. </p>
+            <p>Eine Ausnahme stellt nur das <i>Tagebuch des Verführers</i> dar. Zu ihm bekennt sich noch nicht mal A vollkommen, stattdessen distanziert er sich; will uns glauben machen, dass er sebst nur Herausgeber ist. ... Doch dazu kommen wir später. Das <i>Tagebuch des Verführers</i> wird Erster Teil VIII; zunächst steigen wir mit den Diapsalmata (Erster Teil I) in As Welt ein: </p>
+            <p>"Was ist ein Dichter?", fragen wir. Und erhalten als Antwort: "Ein unglücklicher Mensch, der tiefe Qualen in seinem Herzen birgt, dessen Lippen aber so geformt sind, daß, indem der Seufzer und der Schrei über sie ausströmen, sie klingen wie eine schöne Musik."</p>
+            <p class="p-small">Vergiss nicht deine Lieblingsstellen zu unserer Sitzung mitzubringen.</p>
         </div>
     </div>
     <hr class="solid">
     <div class="container">
     <div class="item">
-        <h2 id="2-unten" >Sitzung 2</h2>
-        [<a class="a-normal" href="#Übersicht">zurück zur Übersicht</a>]
+        <h2 id="2-unten" >Nichtssagende Headline</h2>
+        <p><b>Sitzung II</b> <br>
+            Abschnitt: S. 57 - 125 <br>
+            Fokus: tba.<br></p>
+            <p><a class="a-normal" href="#Übersicht">Zurück zur Übersicht</a></p>
     </div>
     <div class="item-skizze">
         <img src="/Bilder/Skizze2.png" alt="Huhu! Ein wundervoller Tagesplan">
     </div>
     <div class="item">
+            <p><b>Erster Teil II: Fast das gesamte Musikalisch-Erotische</b></p>
             <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
     </div>
     </div>
     <hr class="solid">
     <div class="container">
     <div class="item">    
-        <h2 id="3-unten">Sitzung 3</h2>
-        [<a class="a-normal" href="#Übersicht">zurück zur Übersicht</a>]
+        <h2 id="3-unten">Don Juan</h2>
+        <p><b>Sitzung III</b> <br>
+        Diskussion: S. 125 - 196 <br>
+        Fokus: tba.<br></p>
+        <p><a class="a-normal" href="#Übersicht">Zurück zur Übersicht</a></p>
     </div>
     <div class="item-skizze">
         <img src="/Bilder/Schreibtisch_transpartent.png" alt="Ein Schreibtisch">
     </div>
     <div class="item">
+        <p><b>Erster Teil II (M-A) cont'd & Erster Teil III: der Reflex</b></p>
         <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
     </div>
     </div>
     <hr class="solid">
     <div class="container">
     <div class="item">
-        <h2 id="4-unten">Sitzung 4</h2>
-        [<a class="a-normal" href="#Übersicht">zurück zur Übersicht</a>]
+        <h2 id="4-unten">Schattenrisse</h2>
+        <p><b>Sitzung IV</b> <br>
+        Diskussion: 197 - 254<br>
+        Fokus: tba.<br></p>
+        <p><a class="a-normal" href="#Übersicht">Zurück zur Übersicht</a></p>
     </div>
     <div class="item-skizze">
         <img src="/Bilder/Skizze2.png" alt="Huhu! Ein wundervoller Tagesplan">
     </div>
     <div class="item">
-        <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+        <p><b>Erster Teil IV: Schattenrisse</b></p>
+        <p>Silhouettes oder shadow cracks? "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
     </div>
     </div>
     <hr class="solid">
     <div class="container">
     <div class="item">
-    <h2 id="5-unten">Sitzung 5</h2>
-    [<a class="a-normal" href="#Übersicht">zurück zur Übersicht</a>]
+    <h2 id="5-unten">Wer ist der Glücklichste?</h2>
+    <p><b>Sitzung V</b> <br>
+        Diskussion: 255 - 327<br>
+        Fokus: tba.<br></p>
+        <p><a class="a-normal" href="#Übersicht">Zurück zur Übersicht</a></p>
+    </div>
+    <div class="item-skizze">
+        <img src="/Bilder/Schreibtisch_transpartent.png" alt="Ein Schreibtisch">
     </div>
     <div class="item">
+        <p><b>Erster Teil V & VI: Der Unglücklichst & die erste Liebe</b></p>
         <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
     </div>
-    <div class="item">
-        <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
     </div>
+    <div class="container">
+        <div class="item-center">
+            <a class="a-small" href="https://marcozander.com">Mein Blog</a>
+        </div>
     </div>
     <script src="script.js"></script>
     <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
