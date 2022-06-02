@@ -112,3 +112,7 @@ div {
         padding-top: 10px;
     }
 }
+
+figcaption {
+    text-align: center;
+}
